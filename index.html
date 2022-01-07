@@ -11,7 +11,7 @@
 
 <!-- General and theme style sheets -->
 <link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/reveal.css">
-<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/simple.css" id="theme">
+<link rel="stylesheet" href="https://unpkg.com/reveal.js@4.0.2/dist/theme/sky.css" id="theme">
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -14372,106 +14372,6 @@ Max portfolio DD since start: -0.782 %
 
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
-
-<div class="jp-Cell-outputWrapper">
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Enabling notebook extension splitcell/splitcell...
-      - Validating: problems found:
-        - require?  X splitcell/splitcell
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs jp-mod-noInput ">
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
-
-<div class="jp-Cell-outputWrapper">
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>warning: LF will be replaced by CRLF in index.html.
-The file will have its original line endings in your working directory
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
-
-<div class="jp-Cell-outputWrapper">
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>[main 163df79] update
- Committer: Andreas Johansson &lt;joandre@net.chalmers.se&gt;
-Your name and email address were configured automatically based
-on your username and hostname. Please check that they are accurate.
-You can suppress this message by setting them explicitly. Run the
-following command and follow the instructions in your editor to edit
-your configuration file:
-
-    git config --global --edit
-
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author
-
- 1 file changed, 14458 insertions(+)
- create mode 100644 index.html
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
-
-<div class="jp-Cell-outputWrapper">
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Branch &#39;gh-pages&#39; set up to track remote branch &#39;gh-pages&#39; from &#39;origin&#39;.
-</pre>
-</div>
-</div>
-
-<div class="jp-OutputArea-child">
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Everything up-to-date
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
 </div></section></section>
 </div>
 </div>
@@ -14501,7 +14401,7 @@ require(
             controls: true,
             progress: true,
             history: true,
-            transition: "slide",
+            transition: "none",
             plugins: [RevealNotes]
         });
 
@@ -14514,7 +14414,7 @@ require(
         Reveal.addEventListener('slidechanged', update);
 
         function setScrollingSlide() {
-            var scroll = false
+            var scroll = true
             if (scroll === true) {
               var h = $('.reveal').height() * 0.95;
               $('section.present').find('section')
