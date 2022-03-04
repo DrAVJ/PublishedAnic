@@ -14114,116 +14114,117 @@ div.jp-OutputPrompt {
 <div class="jp-OutputArea-child">
 
 
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre>&#39;#---------------------------------------------------------#&#39;</pre>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
 <div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h2 id="Total-return-since-start:-0.056-%25">Total return since start: 0.056 %<a class="anchor-link" href="#Total-return-since-start:-0.056-%25">&#182;</a></h2>
+<h1 id="Anic-Equity"><strong><em>Anic Equity</em></strong><a class="anchor-link" href="#Anic-Equity">&#182;</a></h1>
 </div>
 
 </div>
 
 <div class="jp-OutputArea-child">
 
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args, **kwargs)</span>
+<span class="ansi-green-fg">   2055</span>         <span class="ansi-green-intense-fg ansi-bold">try</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2056</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>cur<span class="ansi-yellow-intense-fg ansi-bold">.</span>execute<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   2057</span>             <span class="ansi-green-intense-fg ansi-bold">return</span> cur
 
+<span class="ansi-red-intense-fg ansi-bold">OperationalError</span>: disk I/O error
 
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre>&#39;#---------------------------------------------------------#&#39;</pre>
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-intense-fg ansi-bold">DatabaseError</span>                             Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_1092/1340697183.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">      7</span>     display<span class="ansi-yellow-intense-fg ansi-bold">(</span>Markdown<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;# ***Anic Equity*** &#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 8</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>port<span class="ansi-yellow-intense-fg ansi-bold">,</span> max_Equity<span class="ansi-yellow-intense-fg ansi-bold">,</span> acc <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_current_portfolio<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">      9</span>     display<span class="ansi-yellow-intense-fg ansi-bold">(</span>Markdown<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;## Updated:&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> str<span class="ansi-yellow-intense-fg ansi-bold">(</span>dt<span class="ansi-yellow-intense-fg ansi-bold">.</span>now<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>date<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">+</span><span class="ansi-blue-intense-fg ansi-bold">&#39; &#39;</span><span class="ansi-yellow-intense-fg ansi-bold">+</span>str<span class="ansi-yellow-intense-fg ansi-bold">(</span>dt<span class="ansi-yellow-intense-fg ansi-bold">.</span>now<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>time<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_1092/3513509292.py</span> in <span class="ansi-cyan-fg">get_current_portfolio</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">    182</span> <span class="ansi-green-intense-fg ansi-bold">def</span> get_current_portfolio<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 183</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>Max_equity <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_max_eq<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    184</span>     Max_dd <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_max_dd<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_1092/3513509292.py</span> in <span class="ansi-cyan-fg">get_max_eq</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">    162</span>     sql <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;select * from MaxEquity&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 163</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>Max_equity <span class="ansi-yellow-intense-fg ansi-bold">=</span> pd<span class="ansi-yellow-intense-fg ansi-bold">.</span>read_sql<span class="ansi-yellow-intense-fg ansi-bold">(</span>sql<span class="ansi-yellow-intense-fg ansi-bold">,</span> conn<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    164</span>     Max_equity <span class="ansi-yellow-intense-fg ansi-bold">=</span> Max_equity<span class="ansi-yellow-intense-fg ansi-bold">.</span>max_equity<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">read_sql</span><span class="ansi-blue-intense-fg ansi-bold">(sql, con, index_col, coerce_float, params, parse_dates, columns, chunksize)</span>
+<span class="ansi-green-fg">    601</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> isinstance<span class="ansi-yellow-intense-fg ansi-bold">(</span>pandas_sql<span class="ansi-yellow-intense-fg ansi-bold">,</span> SQLiteDatabase<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 602</span><span class="ansi-yellow-intense-fg ansi-bold">         return pandas_sql.read_query(
+</span><span class="ansi-green-fg">    603</span>             sql<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">read_query</span><span class="ansi-blue-intense-fg ansi-bold">(self, sql, index_col, coerce_float, params, parse_dates, chunksize, dtype)</span>
+<span class="ansi-green-fg">   2115</span>         args <span class="ansi-yellow-intense-fg ansi-bold">=</span> _convert_params<span class="ansi-yellow-intense-fg ansi-bold">(</span>sql<span class="ansi-yellow-intense-fg ansi-bold">,</span> params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2116</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>cursor <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>execute<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   2117</span>         columns <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>col_desc<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-green-intense-fg ansi-bold">for</span> col_desc <span class="ansi-green-intense-fg ansi-bold">in</span> cursor<span class="ansi-yellow-intense-fg ansi-bold">.</span>description<span class="ansi-yellow-intense-fg ansi-bold">]</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args, **kwargs)</span>
+<span class="ansi-green-fg">   2067</span>             ex <span class="ansi-yellow-intense-fg ansi-bold">=</span> DatabaseError<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">f&#34;Execution failed on sql &#39;{args[0]}&#39;: {exc}&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2068</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">raise</span> ex <span class="ansi-green-intense-fg ansi-bold">from</span> exc
+<span class="ansi-green-fg">   2069</span> 
+
+<span class="ansi-red-intense-fg ansi-bold">DatabaseError</span>: Execution failed on sql &#39;select * from MaxEquity&#39;: disk I/O error
+
+During handling of the above exception, another exception occurred:
+
+<span class="ansi-red-intense-fg ansi-bold">OperationalError</span>                          Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args, **kwargs)</span>
+<span class="ansi-green-fg">   2055</span>         <span class="ansi-green-intense-fg ansi-bold">try</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2056</span><span class="ansi-yellow-intense-fg ansi-bold">             </span>cur<span class="ansi-yellow-intense-fg ansi-bold">.</span>execute<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">,</span> <span class="ansi-yellow-intense-fg ansi-bold">**</span>kwargs<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   2057</span>             <span class="ansi-green-intense-fg ansi-bold">return</span> cur
+
+<span class="ansi-red-intense-fg ansi-bold">OperationalError</span>: disk I/O error
+
+The above exception was the direct cause of the following exception:
+
+<span class="ansi-red-intense-fg ansi-bold">DatabaseError</span>                             Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_1092/1340697183.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">     14</span>     acc_id <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_accountId_by_name<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#39;Anic Investment&#39;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     15</span>     display<span class="ansi-yellow-intense-fg ansi-bold">(</span>Markdown<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;# ***Anic Equity*** &#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">---&gt; 16</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>port<span class="ansi-yellow-intense-fg ansi-bold">,</span> max_Equity<span class="ansi-yellow-intense-fg ansi-bold">,</span> acc <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_current_portfolio<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     17</span>     display<span class="ansi-yellow-intense-fg ansi-bold">(</span>Markdown<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;## Updated:&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">,</span> str<span class="ansi-yellow-intense-fg ansi-bold">(</span>dt<span class="ansi-yellow-intense-fg ansi-bold">.</span>now<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>date<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">+</span><span class="ansi-blue-intense-fg ansi-bold">&#39; &#39;</span><span class="ansi-yellow-intense-fg ansi-bold">+</span>str<span class="ansi-yellow-intense-fg ansi-bold">(</span>dt<span class="ansi-yellow-intense-fg ansi-bold">.</span>now<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">.</span>time<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">     18</span>     Javascript<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">&#34;Jupyter.notebook.execute_cells([1])&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_1092/3513509292.py</span> in <span class="ansi-cyan-fg">get_current_portfolio</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">    181</span>     <span class="ansi-green-intense-fg ansi-bold">return</span> Max_dd
+<span class="ansi-green-fg">    182</span> <span class="ansi-green-intense-fg ansi-bold">def</span> get_current_portfolio<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 183</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>Max_equity <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_max_eq<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    184</span>     Max_dd <span class="ansi-yellow-intense-fg ansi-bold">=</span> get_max_dd<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    185</span>     acc <span class="ansi-yellow-intense-fg ansi-bold">=</span> ava<span class="ansi-yellow-intense-fg ansi-bold">.</span>get_account_overview<span class="ansi-yellow-intense-fg ansi-bold">(</span>acc_id<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Temp/ipykernel_1092/3513509292.py</span> in <span class="ansi-cyan-fg">get_max_eq</span><span class="ansi-blue-intense-fg ansi-bold">()</span>
+<span class="ansi-green-fg">    161</span> <span class="ansi-green-intense-fg ansi-bold">def</span> get_max_eq<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-fg">    162</span>     sql <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-blue-intense-fg ansi-bold">&#34;select * from MaxEquity&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 163</span><span class="ansi-yellow-intense-fg ansi-bold">     </span>Max_equity <span class="ansi-yellow-intense-fg ansi-bold">=</span> pd<span class="ansi-yellow-intense-fg ansi-bold">.</span>read_sql<span class="ansi-yellow-intense-fg ansi-bold">(</span>sql<span class="ansi-yellow-intense-fg ansi-bold">,</span> conn<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">    164</span>     Max_equity <span class="ansi-yellow-intense-fg ansi-bold">=</span> Max_equity<span class="ansi-yellow-intense-fg ansi-bold">.</span>max_equity<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span>
+<span class="ansi-green-fg">    165</span>     <span class="ansi-green-intense-fg ansi-bold">return</span> Max_equity
+
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">read_sql</span><span class="ansi-blue-intense-fg ansi-bold">(sql, con, index_col, coerce_float, params, parse_dates, columns, chunksize)</span>
+<span class="ansi-green-fg">    600</span> 
+<span class="ansi-green-fg">    601</span>     <span class="ansi-green-intense-fg ansi-bold">if</span> isinstance<span class="ansi-yellow-intense-fg ansi-bold">(</span>pandas_sql<span class="ansi-yellow-intense-fg ansi-bold">,</span> SQLiteDatabase<span class="ansi-yellow-intense-fg ansi-bold">)</span><span class="ansi-yellow-intense-fg ansi-bold">:</span>
+<span class="ansi-green-intense-fg ansi-bold">--&gt; 602</span><span class="ansi-yellow-intense-fg ansi-bold">         return pandas_sql.read_query(
+</span><span class="ansi-green-fg">    603</span>             sql<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+<span class="ansi-green-fg">    604</span>             index_col<span class="ansi-yellow-intense-fg ansi-bold">=</span>index_col<span class="ansi-yellow-intense-fg ansi-bold">,</span>
+
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">read_query</span><span class="ansi-blue-intense-fg ansi-bold">(self, sql, index_col, coerce_float, params, parse_dates, chunksize, dtype)</span>
+<span class="ansi-green-fg">   2114</span> 
+<span class="ansi-green-fg">   2115</span>         args <span class="ansi-yellow-intense-fg ansi-bold">=</span> _convert_params<span class="ansi-yellow-intense-fg ansi-bold">(</span>sql<span class="ansi-yellow-intense-fg ansi-bold">,</span> params<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2116</span><span class="ansi-yellow-intense-fg ansi-bold">         </span>cursor <span class="ansi-yellow-intense-fg ansi-bold">=</span> self<span class="ansi-yellow-intense-fg ansi-bold">.</span>execute<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-yellow-intense-fg ansi-bold">*</span>args<span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-fg">   2117</span>         columns <span class="ansi-yellow-intense-fg ansi-bold">=</span> <span class="ansi-yellow-intense-fg ansi-bold">[</span>col_desc<span class="ansi-yellow-intense-fg ansi-bold">[</span><span class="ansi-cyan-intense-fg ansi-bold">0</span><span class="ansi-yellow-intense-fg ansi-bold">]</span> <span class="ansi-green-intense-fg ansi-bold">for</span> col_desc <span class="ansi-green-intense-fg ansi-bold">in</span> cursor<span class="ansi-yellow-intense-fg ansi-bold">.</span>description<span class="ansi-yellow-intense-fg ansi-bold">]</span>
+<span class="ansi-green-fg">   2118</span> 
+
+<span class="ansi-green-intense-fg ansi-bold">~\Anaconda3\envs\AnicTrading\lib\site-packages\pandas\io\sql.py</span> in <span class="ansi-cyan-fg">execute</span><span class="ansi-blue-intense-fg ansi-bold">(self, *args, **kwargs)</span>
+<span class="ansi-green-fg">   2066</span> 
+<span class="ansi-green-fg">   2067</span>             ex <span class="ansi-yellow-intense-fg ansi-bold">=</span> DatabaseError<span class="ansi-yellow-intense-fg ansi-bold">(</span><span class="ansi-blue-intense-fg ansi-bold">f&#34;Execution failed on sql &#39;{args[0]}&#39;: {exc}&#34;</span><span class="ansi-yellow-intense-fg ansi-bold">)</span>
+<span class="ansi-green-intense-fg ansi-bold">-&gt; 2068</span><span class="ansi-yellow-intense-fg ansi-bold">             </span><span class="ansi-green-intense-fg ansi-bold">raise</span> ex <span class="ansi-green-intense-fg ansi-bold">from</span> exc
+<span class="ansi-green-fg">   2069</span> 
+<span class="ansi-green-fg">   2070</span>     <span class="ansi-yellow-intense-fg ansi-bold">@</span>staticmethod
+
+<span class="ansi-red-intense-fg ansi-bold">DatabaseError</span>: Execution failed on sql &#39;select * from MaxEquity&#39;: disk I/O error</pre>
 </div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h3 id="Equity-now:------------------------------%3E-32260.0-Kr">Equity now: -----------------------------&gt; 32260.0 Kr<a class="anchor-link" href="#Equity-now:------------------------------%3E-32260.0-Kr">&#182;</a></h3>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h3 id="Max-Equity-ever-reached:-------------%3E-35116.35-Kr">Max Equity ever reached: ------------&gt; 35116.35 Kr<a class="anchor-link" href="#Max-Equity-ever-reached:-------------%3E-35116.35-Kr">&#182;</a></h3>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h3 id="Portfolio-value:---------------------------%3E-0.0-Kr">Portfolio value: --------------------------&gt; 0.0 Kr<a class="anchor-link" href="#Portfolio-value:---------------------------%3E-0.0-Kr">&#182;</a></h3>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h3 id="PnL:----------------------------------------%3E-0.0-Kr">PnL: ---------------------------------------&gt; 0.0 Kr<a class="anchor-link" href="#PnL:----------------------------------------%3E-0.0-Kr">&#182;</a></h3>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h3 id="DD-now:----------------------------------%3E--8.134-%25">DD now: ---------------------------------&gt; -8.134 %<a class="anchor-link" href="#DD-now:----------------------------------%3E--8.134-%25">&#182;</a></h3>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h3 id="Max-portfolio-DD-since-start:-----%3E--8.134-%25">Max portfolio DD since start: ----&gt; -8.134 %<a class="anchor-link" href="#Max-portfolio-DD-since-start:-----%3E--8.134-%25">&#182;</a></h3>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-OutputArea-output " data-mime-type="text/markdown">
-<h2 id="Updated:">Updated:<a class="anchor-link" href="#Updated:">&#182;</a></h2>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-
-<div class="jp-RenderedText jp-OutputArea-output " data-mime-type="text/plain">
-<pre>&#39;2022-03-01 14:45:34.627113&#39;</pre>
-</div>
-
-</div>
-
-<div class="jp-OutputArea-child">
-
-
-
-<div id="b3983489-2396-427a-9cd6-839da4392a0d" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
-<script type="text/javascript">
-var element = document.getElementById('b3983489-2396-427a-9cd6-839da4392a0d');
-Jupyter.notebook.execute_cells([1])
-</script>
-</div>
-
 </div>
 
 </div>
@@ -14300,9 +14301,9 @@ if (outputEl) {{
 
 
 
-<div id="b3983489-2396-427a-9cd6-839da4392a0d" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
+<div id="1ac9d815-d53d-46b9-b210-a80f386919b2" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('b3983489-2396-427a-9cd6-839da4392a0d');
+var element = document.getElementById('1ac9d815-d53d-46b9-b210-a80f386919b2');
 Jupyter.notebook.execute_cells([2])
 </script>
 </div>
@@ -14374,9 +14375,9 @@ if (outputEl) {{
 
 
 
-<div id="b3983489-2396-427a-9cd6-839da4392a0d" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
+<div id="1ac9d815-d53d-46b9-b210-a80f386919b2" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('b3983489-2396-427a-9cd6-839da4392a0d');
+var element = document.getElementById('1ac9d815-d53d-46b9-b210-a80f386919b2');
 Jupyter.notebook.execute_cells([3])
 </script>
 </div>
@@ -14457,9 +14458,9 @@ if (outputEl) {{
 
 
 
-<div id="b3983489-2396-427a-9cd6-839da4392a0d" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
+<div id="1ac9d815-d53d-46b9-b210-a80f386919b2" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('b3983489-2396-427a-9cd6-839da4392a0d');
+var element = document.getElementById('1ac9d815-d53d-46b9-b210-a80f386919b2');
 Jupyter.notebook.execute_cells([4])
 </script>
 </div>
@@ -14571,9 +14572,9 @@ Jupyter.notebook.execute_cells([4])
 
 
 
-<div id="b3983489-2396-427a-9cd6-839da4392a0d" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
+<div id="1ac9d815-d53d-46b9-b210-a80f386919b2" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('b3983489-2396-427a-9cd6-839da4392a0d');
+var element = document.getElementById('1ac9d815-d53d-46b9-b210-a80f386919b2');
 Jupyter.notebook.execute_cells([5])
 </script>
 </div>
@@ -14660,11 +14661,363 @@ if (outputEl) {{
 
 
 
-<div id="b3983489-2396-427a-9cd6-839da4392a0d" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
+<div id="1ac9d815-d53d-46b9-b210-a80f386919b2" class="jp-RenderedJavaScript jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="application/javascript">
 <script type="text/javascript">
-var element = document.getElementById('b3983489-2396-427a-9cd6-839da4392a0d');
+var element = document.getElementById('1ac9d815-d53d-46b9-b210-a80f386919b2');
 Jupyter.notebook.execute_cells([6])
 </script>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell  jp-mod-noInput ">
+
+<div class="jp-Cell-outputWrapper">
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OMXS30</th>
+      <th>ACTI</th>
+      <th>ANOT</th>
+      <th>ARISE</th>
+      <th>BEGR</th>
+      <th>BRG B</th>
+      <th>BORG</th>
+      <th>BONG</th>
+      <th>NELLY</th>
+      <th>CCOR B</th>
+      <th>...</th>
+      <th>TITA B</th>
+      <th>MESTRO</th>
+      <th>VIVA</th>
+      <th>CASE</th>
+      <th>NAIG B</th>
+      <th>MTI</th>
+      <th>W5</th>
+      <th>DE</th>
+      <th>L2S</th>
+      <th>NEWBRY</th>
+    </tr>
+    <tr>
+      <th>Time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2021-08-16</th>
+      <td>2396.9914</td>
+      <td>1.480</td>
+      <td>1.004</td>
+      <td>42.35</td>
+      <td>83.4</td>
+      <td>5.44</td>
+      <td>35.65</td>
+      <td>0.748</td>
+      <td>33.50</td>
+      <td>6.94</td>
+      <td>...</td>
+      <td>24.50</td>
+      <td>18.80</td>
+      <td>60.0</td>
+      <td>21.0</td>
+      <td>7.30</td>
+      <td>13.600</td>
+      <td>25.5</td>
+      <td>60.0</td>
+      <td>5.00</td>
+      <td>13.70</td>
+    </tr>
+    <tr>
+      <th>2021-08-17</th>
+      <td>2367.2600</td>
+      <td>1.464</td>
+      <td>1.028</td>
+      <td>43.00</td>
+      <td>82.4</td>
+      <td>5.36</td>
+      <td>35.10</td>
+      <td>0.730</td>
+      <td>32.75</td>
+      <td>6.86</td>
+      <td>...</td>
+      <td>24.50</td>
+      <td>18.80</td>
+      <td>60.0</td>
+      <td>21.0</td>
+      <td>7.30</td>
+      <td>13.600</td>
+      <td>25.5</td>
+      <td>60.0</td>
+      <td>5.00</td>
+      <td>13.70</td>
+    </tr>
+    <tr>
+      <th>2021-08-18</th>
+      <td>2385.5848</td>
+      <td>1.440</td>
+      <td>0.980</td>
+      <td>41.65</td>
+      <td>84.2</td>
+      <td>5.30</td>
+      <td>34.95</td>
+      <td>0.712</td>
+      <td>33.50</td>
+      <td>6.72</td>
+      <td>...</td>
+      <td>24.50</td>
+      <td>18.80</td>
+      <td>60.0</td>
+      <td>21.0</td>
+      <td>7.30</td>
+      <td>13.600</td>
+      <td>25.5</td>
+      <td>60.0</td>
+      <td>5.00</td>
+      <td>13.70</td>
+    </tr>
+    <tr>
+      <th>2021-08-19</th>
+      <td>2341.6761</td>
+      <td>1.460</td>
+      <td>0.958</td>
+      <td>43.00</td>
+      <td>83.4</td>
+      <td>5.34</td>
+      <td>35.85</td>
+      <td>0.706</td>
+      <td>34.25</td>
+      <td>6.92</td>
+      <td>...</td>
+      <td>24.50</td>
+      <td>18.80</td>
+      <td>60.0</td>
+      <td>21.0</td>
+      <td>7.30</td>
+      <td>13.600</td>
+      <td>25.5</td>
+      <td>60.0</td>
+      <td>5.00</td>
+      <td>13.70</td>
+    </tr>
+    <tr>
+      <th>2021-08-20</th>
+      <td>2330.2999</td>
+      <td>1.466</td>
+      <td>0.898</td>
+      <td>42.90</td>
+      <td>78.0</td>
+      <td>5.22</td>
+      <td>36.20</td>
+      <td>0.694</td>
+      <td>33.35</td>
+      <td>6.82</td>
+      <td>...</td>
+      <td>24.50</td>
+      <td>18.80</td>
+      <td>60.0</td>
+      <td>21.0</td>
+      <td>7.30</td>
+      <td>13.600</td>
+      <td>25.5</td>
+      <td>60.0</td>
+      <td>5.00</td>
+      <td>13.70</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>2022-02-25</th>
+      <td>2100.7926</td>
+      <td>0.990</td>
+      <td>0.655</td>
+      <td>43.05</td>
+      <td>129.5</td>
+      <td>4.68</td>
+      <td>43.20</td>
+      <td>0.830</td>
+      <td>25.30</td>
+      <td>5.74</td>
+      <td>...</td>
+      <td>17.25</td>
+      <td>8.90</td>
+      <td>54.5</td>
+      <td>22.0</td>
+      <td>6.78</td>
+      <td>7.780</td>
+      <td>22.9</td>
+      <td>51.0</td>
+      <td>2.16</td>
+      <td>8.46</td>
+    </tr>
+    <tr>
+      <th>2022-02-28</th>
+      <td>2094.4017</td>
+      <td>1.030</td>
+      <td>0.661</td>
+      <td>42.40</td>
+      <td>128.5</td>
+      <td>4.93</td>
+      <td>46.95</td>
+      <td>0.800</td>
+      <td>26.00</td>
+      <td>5.80</td>
+      <td>...</td>
+      <td>19.00</td>
+      <td>9.00</td>
+      <td>55.5</td>
+      <td>22.1</td>
+      <td>7.10</td>
+      <td>7.301</td>
+      <td>27.3</td>
+      <td>54.2</td>
+      <td>2.36</td>
+      <td>9.96</td>
+    </tr>
+    <tr>
+      <th>2022-03-01</th>
+      <td>2122.3837</td>
+      <td>1.030</td>
+      <td>0.679</td>
+      <td>44.30</td>
+      <td>141.5</td>
+      <td>5.06</td>
+      <td>47.30</td>
+      <td>0.812</td>
+      <td>25.00</td>
+      <td>6.28</td>
+      <td>...</td>
+      <td>18.00</td>
+      <td>11.15</td>
+      <td>55.3</td>
+      <td>23.4</td>
+      <td>7.50</td>
+      <td>7.799</td>
+      <td>32.0</td>
+      <td>54.0</td>
+      <td>2.21</td>
+      <td>9.10</td>
+    </tr>
+    <tr>
+      <th>2022-03-02</th>
+      <td>2066.2732</td>
+      <td>1.070</td>
+      <td>0.637</td>
+      <td>42.90</td>
+      <td>145.0</td>
+      <td>4.67</td>
+      <td>46.95</td>
+      <td>0.820</td>
+      <td>24.00</td>
+      <td>6.74</td>
+      <td>...</td>
+      <td>17.30</td>
+      <td>9.90</td>
+      <td>50.0</td>
+      <td>22.7</td>
+      <td>6.78</td>
+      <td>7.999</td>
+      <td>33.9</td>
+      <td>53.4</td>
+      <td>2.25</td>
+      <td>11.25</td>
+    </tr>
+    <tr>
+      <th>2022-03-03</th>
+      <td>2084.9815</td>
+      <td>1.020</td>
+      <td>0.629</td>
+      <td>42.50</td>
+      <td>142.5</td>
+      <td>4.69</td>
+      <td>47.65</td>
+      <td>0.802</td>
+      <td>24.50</td>
+      <td>6.10</td>
+      <td>...</td>
+      <td>17.30</td>
+      <td>9.20</td>
+      <td>50.8</td>
+      <td>23.4</td>
+      <td>6.86</td>
+      <td>8.020</td>
+      <td>38.8</td>
+      <td>54.0</td>
+      <td>2.23</td>
+      <td>10.80</td>
+    </tr>
+  </tbody>
+</table>
+<p>141 rows × 530 columns</p>
+</div>
 </div>
 
 </div>
